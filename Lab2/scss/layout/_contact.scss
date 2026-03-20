@@ -1,8 +1,14 @@
-
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
-.contact{ display:grid; grid-template-columns: 1.1fr .9fr; gap: $spacing * 1.5; align-items:center; @include respond(tablet){ grid-template-columns:1fr; } }
+.contact{ 
+    display:grid; 
+    grid-template-columns: 1.1fr .9fr; 
+    gap: $spacing * 1.5; 
+    align-items:center; 
+    @include respond(tablet){ 
+        grid-template-columns:1fr; 
+    } 
+}
 .contact__text .cta-row{ display:flex; gap:$spacing; margin-top:$spacing }
-.contact__map img{ border-radius:$radius; border:1px solid rgba(255,255,255,.08); }
 .footer{ padding:$spacing * 2 0; text-align:center; color:$color-muted; border-top:1px solid rgba(255,255,255,.06) }

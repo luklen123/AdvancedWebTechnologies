@@ -2,7 +2,15 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
-.nav{ position: sticky; top:0; z-index:50; background: rgba(10,11,15,.7); @include glass; border-bottom: 1px solid rgba(255,255,255,.06); }
+.nav{ 
+    position: sticky;
+    top:0;
+    z-index:50;
+    background: rgba(10,11,15,.7);
+    @include glass; 
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
 .nav__inner{ display:flex; align-items:center; justify-content:space-between; padding: $spacing; }
 .nav__menu{ list-style:none; display:flex; gap:$spacing; margin:0; padding:0 }
 .nav__menu a{ color:$color-text; padding:8px 10px; border-radius:8px }

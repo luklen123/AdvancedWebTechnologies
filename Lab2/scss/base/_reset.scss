@@ -1,0 +1,14 @@
+
+@use 'sass:math';
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:$color-bg;color:$color-text;line-height:1.6}
+img{display:block;max-width:100%;height:auto}
+.container{ @include container; }
+.grid{ display:grid; gap: $spacing * 1.25; }
+.section{ padding: $spacing * 3 0; }
+.section--alt{ background: $color-surface; }
+.section__title{ font-size:$fs-h2; margin: 0 0 $spacing; }

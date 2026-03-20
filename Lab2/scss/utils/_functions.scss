@@ -1,0 +1,4 @@
+
+@function glow($c, $alpha: .35) {
+  @return 0 0 0 3px rgba($c, $alpha);
+}

@@ -1,0 +1,9 @@
+
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.card{ background: #0d1016; border: 1px solid rgba(255,255,255,.06); border-radius: $radius; overflow: hidden; @include shadow; }
+.service-card{ @extend .card; display:flex; flex-direction:column; }
+.service-card img{ aspect-ratio: 16/10; object-fit: cover; }
+.service-card__body{ padding: $spacing * 1.25; }
+.service-card__body h3{ margin:0 0 $spacing * .5 }

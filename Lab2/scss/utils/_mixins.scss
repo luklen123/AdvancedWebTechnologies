@@ -1,0 +1,20 @@
+
+@use 'sass:math';
+@use './variables' as *;
+
+@mixin container { width: min(100% - 2rem, $container); margin-inline: auto; }
+@mixin center { display:flex; align-items:center; justify-content:center; }
+@mixin shadow { box-shadow: $shadow; }
+@mixin glass {
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  backdrop-filter: blur(6px);
+}
+@mixin respond($bp) {
+  @if $bp == mobile { @media (max-width: 640px) { @content; } }
+  @else if $bp == tablet { @media (max-width: 900px) { @content; } }
+}
+@mixin button($bg, $color: #0b0d12) {
+  display:inline-block; font-weight:700; letter-spacing:.2px; text-decoration:none; border-radius:$radius;
+  padding: $spacing * .9 $spacing * 1.25; background:$bg; color:$color; transition:transform .15s ease, filter .15s ease; 
+  &:hover{ transform: translateY(-1px); filter: brightness(1.05); }
+}

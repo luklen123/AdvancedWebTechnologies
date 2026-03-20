@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpeedyWorks - Premium Sports Car Service</title>
+  <meta name="description" content="SpeedyWorks: serwis aut sportowych • diagnostyka • hamulce • zawieszenie • tuning • Wrocław" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <style>
+    body{
+      margin:0;
+      background:#0a0b0f;
+      color:#e7e9ee;
+      font-family:Inter,Segoe UI,Roboto,system-ui,sans-serif
+    } 
+
+    .container{
+      width:min(1100px,100% - 2rem);
+      margin-inline:auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="nav" aria-label="Główna nawigacja">
+    <div class="container nav__inner">
+      <a href="#" class="logo">Speedy<span>Works</span></a>
+      <nav>
+        <ul class="nav__menu">
+          <li><a href="#services">Usługi</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg">
+        <img src="photos/main_car.jpg" alt="Sportowe auto w ciemnym warsztacie"/>
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="container hero__content">
+        <h1 id="hero-title">Premium serwis aut sportowych</h1>
+        <p>Diagnostyka • Hamulce • Zawieszenie • Performance</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Umów wizytę</a>
+          <a class="btn btn--ghost" href="#services">Zobacz usługi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title" class="section__title">Usługi SpeedyWorks</h2>
+        <div class="grid services">
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1200&auto=format&fit=crop" alt="Diagnostyka komputerowa" loading="lazy"/>
+            <div class="service-card__body">
+              <h3>Diagnostyka komputerowa</h3>
+              <p>Zaawansowane testy i odczyt parametrów live dla aut performance.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1586125674857-cf561f3d4b2b?q=80&w=1200&auto=format&fit=crop" alt="Układ hamulcowy" loading="lazy"/>
+            <div class="service-card__body">
+              <h3>Hamulce high‑performance</h3>
+              <p>Serwis i upgrade tarcz, klocków i przewodów w stalowym oplocie.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1543269665-7849e34bdb03?q=80&w=1200&auto=format&fit=crop" alt="Zawieszenie i geometria" loading="lazy"/>
+            <div class="service-card__body">
+              <h3>Zawieszenie i geometria</h3>
+              <p>Regulacja geometrii i montaż zestawów coilover pod tor i ulicę.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop" alt="Tuning i performance" loading="lazy"/>
+            <div class="service-card__body">
+              <h3>Performance & tuning</h3>
+              <p>Dolot, wydech, strojenie; realne zyski mocy, kontrola temperatur.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section section--alt" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="section__title">Galeria warsztatu</h2>
+        <div class="grid gallery">
+          <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1000&auto=format&fit=crop" alt="Stanowisko diagnostyczne" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop" alt="Koło sportowego auta" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop" alt="Detal felgi" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=1000&auto=format&fit=crop" alt="Warsztat w cieniu" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1000&auto=format&fit=crop" alt="Silnik — zbliżenie" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1578844251758-3eb1c37d8ba0?q=80&w=1000&auto=format&fit=crop" alt="Sportowe auto na podnośniku" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__text">
+          <h2 id="contact-title" class="section__title">Kontakt</h2>
+          <p><strong>SpeedyWorks</strong><br>ul. Przykładowa 10, Wrocław<br>pn–pt: 8:00–18:00</p>
+          <p>📩 <a href="mailto:kontakt@speedyworks.pl">kontakt@speedyworks.pl</a><br>📞 <a href="tel:+48123456789">+48 123 456 789</a></p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="mailto:kontakt@speedyworks.pl">Umów termin</a>
+            <a class="btn btn--ghost" href="#services">Pełna oferta</a>
+          </div>
+        </div>
+        <div class="contact__map">
+          <img src="https://images.unsplash.com/photo-1517202383675-eb0a6eac0f51?q=80&w=1200&auto=format&fit=crop" alt="Wejście do warsztatu" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>©SpeedyWorks — Premium Sports Car Service</small>
+    </div>
+  </footer>
+</body>
+</html>

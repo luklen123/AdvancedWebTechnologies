@@ -1,0 +1,25 @@
+
+/* Variables */
+$color-bg: #0a0b0f;
+$color-surface: #0f1219;
+$color-text: #e7e9ee;
+$color-muted: #aab1c3;
+$color-primary: #25e3b9; // neon mint
+$color-accent: #5aa0ff;  // neon blue
+
+$container: 1100px;
+$radius: 14px;
+$spacing: 16px;
+$shadow: 0 12px 30px rgba(0,0,0,.35);
+
+$fs-base: 16px;
+$fs-h1: $fs-base * 2.5;
+$fs-h2: $fs-base * 1.75;
+$fs-h3: $fs-base * 1.25;
+
+$palette: (
+  primary: $color-primary,
+  accent: $color-accent,
+  surface: $color-surface,
+  muted: $color-muted,
+);

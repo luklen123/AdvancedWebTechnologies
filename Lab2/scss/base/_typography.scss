@@ -1,0 +1,13 @@
+
+@use '../utils/variables' as *;
+
+h1,h2,h3{line-height:1.2;margin:0 0 $spacing * .75}
+h1{font-size:$fs-h1}
+h2{font-size:$fs-h2}
+h3{font-size:$fs-h3}
+
+p{margin:0 0 $spacing; color: $color-muted;}
+a{color:$color-primary; text-decoration:none}
+a:hover{text-decoration:underline}
+.logo{font-weight:800; font-size:1.25rem}
+.logo span{color:$color-primary}

@@ -97,6 +97,10 @@ a:hover {
   transform: translateY(-1px);
   filter: brightness(1.05);
 }
+.btn:focus-visible, .btn--ghost:focus-visible, .btn--primary:focus-visible {
+  outline: none;
+  box-shadow: glow(#25e3b9, 0.5);
+}
 
 .btn--primary {
   box-shadow: 0 8px 24px rgba(37, 227, 185, 0.25);

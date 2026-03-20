@@ -1,6 +1,12 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
-.btn{ @include button($color-primary, #0a0b0f); }
+.btn{ 
+    @include button($color-primary, #0a0b0f); 
+    &:focus-visible {
+    outline: none; 
+    box-shadow: glow($color-primary, 0.5); 
+  }
+}
 .btn--primary{ @extend .btn; box-shadow: 0 8px 24px rgba($color-primary, .25); }
 .btn--ghost{ @extend .btn; background: transparent; color: $color-text; border: 1px solid rgba($color-text,.2); }
